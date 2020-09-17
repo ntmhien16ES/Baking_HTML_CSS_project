@@ -55,14 +55,10 @@
 }
 /*------- HEADER ---------*/
 .header .header__row {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-}
-.header .header__logo{
-    float: left;
 }
 .header .header__logo a{
     font-size: 3.4rem;
@@ -71,10 +67,6 @@
 }
 .header .header__menu, .header #navbar_toggler {
     display: none;
-}
-.header nav ul {
-    float: right;
-    margin: 0 auto;
 }
 .header nav ul li {
     float: left;
@@ -554,8 +546,8 @@
         display: block;
         height: 100%;
     }
-    .header nav {
-        display: block;
+    .header__logo {
+        float: left;
     }
     .header .header__menu {
         display: block;
@@ -569,9 +561,6 @@
         border: 1px solid rgb(170, 161, 161);
         letter-spacing: var(--letter-spacing);
         cursor: pointer;
-    }
-    .menu__content {
-        display: none;
     }
     #navbar_toggler:checked+.menu__content {
         display: block;
