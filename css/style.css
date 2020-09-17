@@ -44,6 +44,9 @@
 .clear-both {
     clear: both;
 }
+.clear-left {
+    clear: left;
+}
 .title__section {
     font-size: 3.8rem;
     font-weight: 800;
