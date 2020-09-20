@@ -566,6 +566,9 @@
         letter-spacing: var(--letter-spacing);
         cursor: pointer;
     }
+    .menu__content {
+        display: none;
+    }
     #navbar_toggler:checked+.menu__content {
         display: block;
         background-color: var(--background-white);
