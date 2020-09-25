@@ -57,12 +57,9 @@
     text-align: right;
 }
 /*------- HEADER ---------*/
-.header .header__row {
-    display: flex;
+.header .row {
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 .header .header__logo a{
     font-size: 3.4rem;
@@ -90,9 +87,8 @@
 
 /*---------- CAROSEL ------------*/
 .carosel {
-    background-image: url(../images/1.jpg);
+    background: url(../images/1.jpg) no-repeat center;
     background-size: cover;
-    background-position: center;
     min-height: 34vw;
 }
 
@@ -275,16 +271,12 @@
     width: 50%;
 }
 .achievements__item-bg2 {
-    background-image: url(../images/bg2.jpg);
+    background: url(../images/bg2.jpg) no-repeat top right;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right;
 }
 .achievements__item-bg3 {
-    background-image: url(../images/bg3.jpg);
+    background: url(../images/bg3.jpg) no-repeat bottom left;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom left;
 }
 .achievements__content {
     padding: 9.6rem 3.2rem 0;
@@ -546,22 +538,27 @@
         max-width: 720px;
     }
     /* ---------HEADER------ */
-    .header .header__row {
+    .header .row {
         display: block;
         height: 100%;
     }
     .header__logo {
         float: left;
     }
+    .header .header__logo a{
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--text-pink);
+    }
     .header .header__menu {
         display: block;
-        padding: .8rem 1.4rem;
-        font-size: 1.3rem;
-        margin-top: 2rem;
         float: right;
-        background-color: var(--background-white);
-        color: var(--text-black-0);
+        font-size: 1.3rem;
         font-weight: 700;
+        color: var(--text-black-0);
+        padding: .8rem 1.4rem;
+        margin-top: 1.5rem;
+        background-color: var(--background-white); 
         border: 1px solid rgb(170, 161, 161);
         letter-spacing: var(--letter-spacing);
         cursor: pointer;
@@ -643,6 +640,22 @@
     .container {
         max-width: 540px;
     }
+    /* ---------HEADER------ */
+    .header .header__logo a{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--text-pink);
+    }
+    .header .header__logo img {
+        width: 8rem;
+    }
+    .header .header__menu {
+        margin-top: 1rem;
+    }
+    /* -----INTRO----- */
+    .intro {
+        margin-top: -5rem;
+    }
     /* --------ACHIEVEMENTS----------- */
     .achievements__content {
         padding: 9.6rem 6rem 0;
@@ -669,7 +682,22 @@
     }
 }
 @media (max-width: 576px) {
+    /* ---------HEADER------ */
+    .header .header__logo a{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--text-pink);
+    }
+    .header .header__logo img {
+        width: 6.5rem;
+    }
+    .header .header__menu {
+        margin-top: 0.7rem;
+    }
     /* -----INTRO----- */
+    .intro {
+        margin-top: -3.8rem;
+    }
     .intro__item {
         max-width: 40rem;
     }
